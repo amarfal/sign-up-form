@@ -31,27 +31,38 @@
             <section class="form-wrap">
                 <h1>let's do this!</h1>
 
-                <form action="#" method="post" novalidate>
+                <form action="#" method="post">
                     <!-- Two columns -->
                      <div class="fields">
                         <div class="field">
                             <label for="first">first name</label>
-                            <input id="first" name="first" type="text" required />
+                            <input id="first" name="first" type="text" 
+                                   required maxlength="30"
+                                   pattern="^[A-Za-z][A-Za-z\'s-]{1,29}$"
+                                   title="Letters only; spaces, apostrophes, and hyphens allowed." />
                         </div>
 
                         <div class="field">
                             <label for="last">last name</label>
-                            <input id="last" name="last" type="text" required />
+                            <input id="last" name="last" type="text" 
+                                   required maxlength="30"
+                                   pattern="^[A-Za-z][A-Za-z\'s-]{1,29}$"
+                                   title="Letters only; spaces, apostrophes, and hyphens allowed." />
                         </div>
 
                         <div class="field">
                             <label for="email">email</label>
-                            <input id="email" name="email" type="email" required />
+                            <input id="email" name="email" type="email" 
+                                   required
+                                   inputmode="email" />
                         </div>
 
                         <div class="field">
                             <label for="phone">phone number</label>
-                            <input id="phone" name="phone" type="tel" />
+                            <input id="phone" name="phone" type="tel" 
+                                   pattern="^\d{3}-?\d{3}-?\d{4}$"
+                                   inputmode="tel"
+                                   title="Use 10 digits (e.g., 5551234567 or 555-123-4567)." />
                         </div>
 
                         <div class="field">
