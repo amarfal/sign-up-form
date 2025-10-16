@@ -49,6 +49,44 @@ body {
     border: 6px solid var(--accent);
 }
 
+/* -- right side of page -- */
+.panel {
+    background: var(--panel);
+    border-radius: 6px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.25);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
 
+/* -- intro box -- */
+.intro {
+    margin: 18px;
+    padding: 22px 24px;
+    background: var(--intro-bg);
+    border: 8px solid var(--accent);
+    color: #fff7e8;
+    font: 18px/1.5 monospace;
+    border: 4px;
+}
+.intro p { margin: 0 0 16px; }
+
+/* -- form box -- */
+.form-wrap {
+    padding: 12px 24px 28;
+}
+
+.form-wrap h1 {
+    margin: 4px 0 14px;
+    font-size: 26px;
+}
+
+/* -- form fields -- */
+.fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 18px;
+    margin-bottom: 18px;
+}
 
 
